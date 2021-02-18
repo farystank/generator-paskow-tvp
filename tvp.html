@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+</style>
+<img id="1" width="1920" height="1080" src="1.webp" alt="TVP" style="display: none;">
+<img id="2" width="1920" height="1080" src="2.webp" alt="TVP" style="display: none;">
+<img id="3" width="1920" height="1080" src="3.webp" alt="TVP" style="display: none;">
+<img id="4" width="1920" height="1080" src="4.webp" alt="TVP" style="display: none;">
+<img id="5" width="1920" height="1080" src="5.webp" alt="TVP" style="display: none;">
+<img id="6" width="1920" height="1080" src="6.webp" alt="TVP" style="display: none;">
+<img id="7" width="1920" height="1080" src="7.webp" alt="TVP" style="display: none;">
+<img id="8" width="1920" height="1080" src="8.webp" alt="TVP" style="display: none;">
+
+
+<canvas id="tvp" width="1920" height="1080"style="border:1px solid #d3d3d3;">
+</canvas>
+
+<br />
+<input style="width: 700px; font-size: 16px; height: 30px;" type="text" placeholder="Pasek maksymalnie na 35 znaków w najgorszym przypadku więc teoretycznie może być dłuższy" id="input" onkeyup="this.value = this.value.toUpperCase();">
+<button style="height: 30px;" type="button" onclick="nowyPasek();">Generuj</button>
+
+<script>
+
+function nowyPasek(){
+    var czc;
+    var wys;
+    var x = document.getElementById("input").value;
+    var los = Math.floor(Math.random() * 7);
+    var zdj = ['1', '2', '3', '4', '5', '6', '7', '8'];        
+    var dlu = document.getElementById('input').value;
+    if (x.length <= 29) {
+       czc = "66px";
+       wys = 917;
+    } else if (x.length > 29 && x.length <= 31 ) {
+       czc = "62px";
+       wys = 917;
+    } else if (x.length > 31 && x.length <= 33 ) {
+       czc = "58px";
+       wys = 913;
+    } else if (x.length > 33){
+       czc = "54px";
+       wys = 911;
+    }
+
+    var canvas = document.getElementById("tvp");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById(zdj[los]);
+    var gradient = ctx.createLinearGradient(0, 865, 0, 911);
+    gradient.addColorStop(0, "#F9FDFF");
+    gradient.addColorStop(1, "#B3BAC6");
+    ctx.fillStyle = gradient;
+    ctx.shadowColor = "#141D51";
+    ctx.shadowOffsetY = 2;
+    ctx.shadowBlur = 4;
+    ctx.drawImage(img, 1, 1);
+    ctx.font = "600 " + czc + " DM Sans, sans-serif";
+    ctx.fillText(x,363,wys);
+}
+</script>
+
+</body>
+</html>
