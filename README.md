@@ -6,3 +6,7 @@ Następnie aby pobrać wygenerowany obrazek klikamy na niego prawym przyciskiem 
 ![alt text](https://github.com/farystank/generator-paskow-tvp/blob/main/przyk%C5%82adowy%20pasek.png)
 # Modyfikacje
 Można edytować do woli i publikować własne wersje
+
+# Do TVP:
+Proszę mnie nie pozywać, wystarczy jak, napiszecie maila, to usunę z github-a.
+farys@secmail.pro
