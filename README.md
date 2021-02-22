@@ -8,5 +8,5 @@ Następnie aby pobrać wygenerowany obrazek klikamy na niego prawym przyciskiem 
 Można edytować do woli i publikować własne wersje
 
 # Do TVP:
-Proszę mnie nie pozywać, wystarczy jak, napiszecie maila, to usunę z github-a.
+Proszę mnie nie pozywać, wystarczy jak, napiszecie maila, to usunę z github-a. <br />
 farys@secmail.pro
