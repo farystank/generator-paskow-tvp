@@ -1,4 +1,4 @@
-# Generator pasków tvp
+# Generator pasków 
 Prosty generator pasków TVP napisany w JavaScript. <br /> Zdjęcia są w rozdzielczości 1920x1080
 # Działanie
 Wystarczy wpisać tekst do odpowiedniego pola i kliknąć w przycisk Generuj. <br />
