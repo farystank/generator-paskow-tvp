@@ -25,7 +25,7 @@ function nowyMem(){
         ctx.strokeStyle = kol2;
         ctx.lineWidth = grub;        
         ctx.fillStyle = kol;
-        ctx.drawImage(img, 1, 1);
+        ctx.drawImage(img, 0, 0);
         ctx.font = "600 " + czc + "px" + " Arial, sans-serif";
         ctx.strokeText(x,marl,wys);
         ctx.strokeText(y,marl2,wys2);

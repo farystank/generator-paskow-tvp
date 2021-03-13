@@ -28,7 +28,7 @@ function nowyPasek(){
     ctx.shadowColor = "#141D51";
     ctx.shadowOffsetY = 2;
     ctx.shadowBlur = 4;
-    ctx.drawImage(img, 1, 1);
+    ctx.drawImage(img, 0, 0);
     ctx.font = "600 " + czc + " Arial, sans-serif";
     ctx.fillText(x,363,wys);
 }
