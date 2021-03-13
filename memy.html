@@ -21,6 +21,11 @@ body
    {
       width: 100% !important;     
    }
+
+   input[type=number]
+   {
+      width: 100% !important;     
+   }
    
    button
    {
@@ -36,6 +41,15 @@ canvas
 }
 
 input[type=text]
+{
+   width: 700px; 
+   font-size: 16px; 
+   height: 30px; 
+   border-radius: 0px; 
+   outline: none;   
+}
+
+input[type=number]
 {
    width: 700px; 
    font-size: 16px; 
@@ -68,20 +82,20 @@ a:hover
 <canvas id="mem"></canvas>
 
 <br />
-<input type="text" placeholder="Rozmiar czcionki (przykład: 64)" id="input_czc"><br /><br />
-<input type="text" placeholder="Grubość obramowania tekstu (przykład: 8)" id="input_grub"><br /><br /><br />
+<input type="number" placeholder="Rozmiar czcionki (przykład: 64)" id="input_czc"><br /><br />
+<input type="number" placeholder="Grubość obramowania tekstu (przykład: 8)" id="input_grub"><br /><br /><br />
 <input type="text" placeholder="Górny tekst" id="input"><br /><br />
-<input type="text" placeholder="Górny margines (przykład: 47)" id="input_mart"><br /><br />
-<input type="text" placeholder="Lewy margines (przykład: 60)" id="input_marl"><br /><br /><br />
+<input type="number" placeholder="Górny margines (przykład: 47)" id="input_mart"><br /><br />
+<input type="number" placeholder="Lewy margines (przykład: 60)" id="input_marl"><br /><br /><br />
 <input type="text" placeholder="Dolny tekst" id="input2"><br /><br />
-<input type="text" placeholder="Dolny margines (przykład: 60)" id="input_mart2"><br /><br />
-<input type="text" placeholder="Lewy margines (przykład: 60)" id="input_marl2"><br /><br /><br />
+<input type="number" placeholder="Dolny margines (przykład: 60)" id="input_mart2"><br /><br />
+<input type="number" placeholder="Lewy margines (przykład: 60)" id="input_marl2"><br /><br /><br />
 <input type="text" placeholder="Kolor tekstu" id="input_kol"><br /><br />
 <input type="text" placeholder="Kolor obramowania tekstu" id="input_kol2"><br /><br />
 <input type="file" accept="image/*" onchange="zaladuj_zdj(event)"><br /><br />
 <button onclick="nowyMem();">Generuj</button>
 <br /><br />
-<p>INFO 1 - jeżeli chcesz zostawić np. górny tekst pusty wystarczy wstawić spacje</p>
+<p>INFO 1 - jeżeli chcesz zostawić np. górny tekst pusty wystarczy wstawić spacje a marginesy zapełniamy zerami</p>
 <p>INFO 2 - wszytskie jednostki są w px</p>
 <p>INFO 3 - kolory można podać jako hex (#fff), rgb (rgb(255, 255, 255)) lub z angielskiego (black, white, red...)</p>
 [ <a href="index.html">Strona główna</a> ]
