@@ -29,6 +29,6 @@ function nowyPasek(){
     ctx.shadowOffsetY = 2;
     ctx.shadowBlur = 4;
     ctx.drawImage(img, 1, 1);
-    ctx.font = "600 " + czc + " DM Sans, sans-serif";
+    ctx.font = "600 " + czc + " Arial, sans-serif";
     ctx.fillText(x,363,wys);
 }
